@@ -4,6 +4,8 @@ import remarkGfm from 'remark-gfm';
 import VoiceMode from './components/VoiceMode';
 import './index.css';
 
+const API_BASE_URL = 'https://powerai-agent.onrender.com';
+
 function App() {
   const [mode, setMode] = useState('chat'); // 'chat' or 'voice'
   const [messages, setMessages] = useState([
@@ -33,7 +35,7 @@ function App() {
       }
 
       setIsAiSpeaking(true);
-      const response = await fetch('http://localhost:5000/api/tts', {
+      const response = await fetch(`${API_BASE_URL}/api/tts`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text }),
@@ -78,7 +80,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/chat', {
+      const response = await fetch(`${API_BASE_URL}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
