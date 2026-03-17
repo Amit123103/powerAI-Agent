@@ -1,4 +1,4 @@
-# 🚀 Perfect AI Agent - PowerAI
+# 🚀 Perfect AI Agent - PowerAI 🤖
 
 A premium, high-performance AI Chatbot featuring **Real-Time Hands-Free Voice**, ultra-fast **NVIDIA NIM** (Llama 3.1 405B) integration, and sophisticated modern design.
 
