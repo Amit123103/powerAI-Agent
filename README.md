@@ -6,12 +6,13 @@ A premium, high-performance AI Chatbot featuring real-time Voice Conversation, u
 
 ## ✨ Key Features
 
-- **🎙️ Real-Time Voice Loop**: Hands-free conversation experience. The AI listens, thinks, and speaks back automatically.
-- **⚡ NVIDIA NIM Integration**: Powered by `llama-3.1-405b` for lightning-fast, expert-level reasoning.
-- **🔊 Premium AI Voice**: High-quality Text-to-Speech (TTS) integration for a natural conversational feel.
-- **💎 Modern UI/UX**: Glassmorphism design, smooth micro-animations, and responsive layout for all devices.
-- **🛡️ Secure Proxy**: Dedicated Node.js backend to protect your API keys.
-- **📝 Markdown Support**: Beautifully formatted responses including tables, lists, and code blocks.
+- **🎙️ Real-Time Voice Loop**: Hands-free conversation experience. The AI listens, thinks, and speaks back automatically without manual clicks.
+- **🔇 Concise Mastery**: Engineered for direct answers. No fluff, no introductory padding—just the facts and solutions you need.
+- **⚡ NVIDIA NIM Power**: Integrated with `llama-3.1-405b-instruct` for expert-level reasoning at lightning speeds.
+- **🔊 Premium AI Voice**: High-quality Text-to-Speech (TTS) for natural conversations (with a high-quality local fallback for NVIDIA users).
+- **💎 Modern UI/UX**: Sophisticated glassmorphism design with smooth micro-animations and responsive layouts.
+- **🛡️ Secure Proxy**: Enterprise-grade Node.js backend to keep your API keys safe.
+- **📝 Markdown Support**: Professional formatting for tables, code, and lists.
 
 ## 🛠️ Tech Stack
 
