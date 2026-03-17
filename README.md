@@ -20,29 +20,25 @@ A premium, high-performance AI Chatbot featuring **Real-Time Hands-Free Voice**,
 - **Backend**: Node.js, Express, OpenAI SDK
 - **APIs**: NVIDIA NIM & OpenAI TTS
 
-## 🚀 Getting Started (Zero-Config)
+## 🚀 Deployment (GitHub & Render)
 
-### 1. Repository Setup
-```bash
-git clone https://github.com/Amit123103/powerAI-Agent.git
-cd powerAI-Agent
-```
+This project is configured for **Dual Deployment**:
 
-### 2. Quick Start (Development)
-Create a `.env` file in the `server` folder:
-```env
-OPENAI_API_KEY=your_key_here
-PORT=5000
-```
-Run the full stack from the root:
-```bash
-npm install # Installs root, client, and server
-npm start   # Starts the production backend
-```
+### 1. Backend (Server) - Deployed on [Render](https://render.com)
+The Node.js server acts as an API proxy.
+- **Service Type:** Web Service
+- **Root Directory:** `server`
+- **Build Command:** `npm install`
+- **Start Command:** `npm start`
+- **Environment Variables:** Add `OPENAI_API_KEY` with your API key.
 
-### 3. Production Deployment (Render)
-- **Backend (Web Service):** Root: `server`, Build: `npm install`, Start: `npm start`. Add `OPENAI_API_KEY` to env vars.
-- **Frontend (Static Site):** Root: `client`, Build: `npm install; npm run build`, Publish: `dist`.
+### 2. Frontend (Client) - Deployed on [GitHub Pages](https://pages.github.com)
+The React app is automatically built and deployed to GitHub Pages every time you push to the `main` branch.
+- **Automation:** Uses GitHub Actions in `.github/workflows/deploy-gh-pages.yml`.
+- **Base Path:** Configured in `client/vite.config.js` as `/powerAI-Agent/`.
+- **Live URL:** `https://amit123103.github.io/powerAI-Agent/`
 
 ---
+
+## 📂 Project Structure
 Built with intensity and precision by [Amit123103](https://github.com/Amit123103) & [Antigravity AI]
