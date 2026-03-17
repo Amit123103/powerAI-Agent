@@ -8,10 +8,11 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors()); // Allow all origins for hosted frontend compatibility
 app.use(express.json());
 
 const isNvidiaKey = process.env.OPENAI_API_KEY?.startsWith('nvapi-');
+console.log('Production mode enabled - NVIDIA NIM detected:', isNvidiaKey);
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,

@@ -4,7 +4,9 @@ import remarkGfm from 'remark-gfm';
 import VoiceMode from './components/VoiceMode';
 import './index.css';
 
-const API_BASE_URL = 'https://powerai-agent.onrender.com';
+const API_BASE_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:5000' 
+  : 'https://powerai-agent.onrender.com';
 
 function App() {
   const [mode, setMode] = useState('chat'); // 'chat' or 'voice'
